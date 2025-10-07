@@ -69,3 +69,13 @@ jobs:
                -H "Authorization: Bearer ${{ secrets.XRAY_TOKEN }}" \
                --data @results.json \
                https://xray.cloud.getxray.app/api/v2/import/execution
+
+           - name: Generate HTML coverage report
+        run: |
+          pytest --cov=app --cov-report=html
+          
+      - name: Upload coverage report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-html
+          path: htmlcov
