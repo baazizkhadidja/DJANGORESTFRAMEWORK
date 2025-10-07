@@ -24,7 +24,7 @@ jobs:
         env:
           POSTGRES_USER: doody
           POSTGRES_PASSWORD: Khadidja1?
-          POSTGRES_DB: test_db
+          POSTGRES_DB: test
         ports:
           - 5432:5432
         options: >-
@@ -34,7 +34,7 @@ jobs:
           --health-retries=5
 
     env:
-      DATABASE_URL: postgres://django:django@localhost:5432/test_db
+      DATABASE_URL: postgres://django:django@localhost:5432/test
       DJANGO_SETTINGS_MODULE: Project.settings
       SECRET_KEY: testkey
       DEBUG: 0
