@@ -22,8 +22,8 @@ jobs:
       postgres:
         image: postgres:15
         env:
-          POSTGRES_USER: django
-          POSTGRES_PASSWORD: django
+          POSTGRES_USER: doody
+          POSTGRES_PASSWORD: Khadidja1?
           POSTGRES_DB: test_db
         ports:
           - 5432:5432
