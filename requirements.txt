@@ -24,7 +24,7 @@ PyJWT==2.10.1
 pytest==7.0.0
 pytest-cov==7.0.0
 pytest-django==4.11.1
-pytest_xray==0.2.1
+pytest_xray==3.0.0
 PyYAML==6.0.3
 requests==2.21.0
 six==1.17.0
