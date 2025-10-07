@@ -2,9 +2,13 @@ name: Django CI
 
 on:
   push:
-    branches: [ main, DP-1-api-view ]
+    branches:
+      - main
+      - DP-1-api-view 
   pull_request:
-    branches: [ main, DP-1-api-view ]
+    branches:
+      - main
+      - DP-1-api-view
 
 jobs:
   test:
