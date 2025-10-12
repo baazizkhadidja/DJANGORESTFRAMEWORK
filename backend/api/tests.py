@@ -86,3 +86,4 @@ class TestProductAPI:
         serializer = ProductSerializer(data=data)
         assert not serializer.is_valid()
         assert "title" in serializer.errors
+#test jira
